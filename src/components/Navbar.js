@@ -7,9 +7,9 @@ export default function Navbar () {
             </div>
             <div className="nav-links-container">
                 <a className="top-nav-link" href="#about">About</a>
-                <a className="top-nav-link" href="#about">Projects</a>
-                <a className="top-nav-link" href="#about">Experience</a>
-                <a className="top-nav-link" href="#about">Resume</a>
+                <a className="top-nav-link" href="#projects">Projects</a>
+                <a className="top-nav-link" href="#experience">Experience</a>
+                <a className="top-nav-link" href="#resume">Resume</a>
             </div>
         </div>
     )
