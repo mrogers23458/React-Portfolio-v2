@@ -1,8 +1,8 @@
-import image from '../assets/images/sketchMe.png'
+import image from '../../assets/images/sketchMe.png'
 
-export default function Body () {
+export default function Home () {
     return (
-        <div id="#home" className="page-one-box">
+        <div id="home" className="page-one-box">
             <div className="page-one-text-box">
                 <h1 className="hello-text medium">HELLO I'M</h1>
                 <h2 className="name-text light">MICHAEL ROGERS</h2>
