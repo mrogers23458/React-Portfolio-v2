@@ -1,5 +1,8 @@
-export default function Navbar () {
+import resume from '../assets/documents/resume.pdf'
 
+export default function Navbar () {
+    
+    const myResume = resume
     const toggleModal = function () {
         var modal = document.querySelector('.modal-box')
         var down = document.querySelector('.rotate1')
@@ -36,7 +39,7 @@ export default function Navbar () {
                 <a className="top-nav-link light" href="/about">About</a>
                 <a className="top-nav-link light" href="projects">Projects</a>
                 <a className="top-nav-link light" href="experience">Experience</a>
-                <a className="top-nav-link light" href="resume">Resume</a>
+                <a className="top-nav-link light" href={myResume}  target='_blank' rel='noopener noreferrer'>Resume</a>
             </div>
         </div>
         <div className="mobile-nav">
@@ -51,7 +54,7 @@ export default function Navbar () {
                     <a href="/about" className="mobile-nav-link light">About</a>
                     <a href="/projects" className="mobile-nav-link light">projects</a>
                     <a href="/experience" className="mobile-nav-link light">Experience</a>
-                    <a href="/resume" className="mobile-nav-link light">Resume</a>
+                    <a href={myResume} className="mobile-nav-link light" target='_blank' rel='noopener noreferrer' >Resume</a>
                 </div>
             </div>
         </div>
