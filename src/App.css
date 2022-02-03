@@ -1,18 +1,24 @@
 /* root colors */
 :root {
-  --light: #ffffff;
-  --medium: #cbcbcb;
-  --dark: #949494;
+  --light: #301c0b;
+  --medium: #af5f1d;
+  --dark: #0e4366;
   --pitch: #000000;
+  --bright: #329fa7;
+  --logo: #21945a;
 }
 /* body */
 body {
-  background: black;
+  background: white;
 }
 
 /* class colors */
 .light {
   color: var(--light);
+}
+
+.logo {
+  color: var(--logo);
 }
 
 .medium {
@@ -21,6 +27,10 @@ body {
 
 .dark {
   color: var(--dark)
+}
+
+.bright {
+  color: var(--bright);
 }
 
 .pitch {
@@ -41,7 +51,7 @@ body {
   font-size: 20px;
   text-decoration: none;
   padding: 5px;
-  border: 2px solid;
+  border: 2px solid var(--light);
 }
 
 .top-nav-link {
@@ -54,7 +64,7 @@ body {
 
 /* home page */
 .page-one-box {
-  height: 90vh;
+  height: 75vh;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
@@ -65,7 +75,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: left;
-  justify-content: flex-end;
+  justify-content: center;
   height: 33vw;
 }
 
@@ -88,22 +98,22 @@ body {
   font-family: 'Josefin Sans' sans-serif;
   font-weight: 100;
   text-align: left;
+  letter-spacing: 0.75vw;
   margin-bottom: 10vh;
 }
 
 .work-together-box {
-  width: 50%;
+  width: 35%;
   border: 2px solid #949494;
 }
 
 .work-text {
   text-align: center;
-  font-size: 1.5vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  font-size: 1vw;
 }
 
 .profile-pic {
+  box-shadow: 12px 12px 35px var(--light);
   height: 33vw;
   width: 33vw;
 }
@@ -123,11 +133,14 @@ body {
   justify-content: center;
   width: 30vw;
   height: 70vh;
+  border-right: 2px solid lightgray;
+  margin-top: 2vw;
 }
 
 .about-title-text {
   font-size: 5vw;
-  border-right: 2px solid lightgray;
+  font-family: 'Prata';
+  
 }
 
 .about-text-box {
@@ -139,29 +152,114 @@ body {
   align-items: flex-start;
 }
 
+.bold-this {
+  font-weight: bold;
+}
+
+.about-me-text {
+  font-size: 1.5vw;
+}
+
 .about-me-text1{
+  margin-top: .75vw;
   font-size: 3.5vw;
   font-weight: bold;
   text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .about-me-text2 {
   margin-top: -2vw;
   font-size: 2.5vw;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
 }
 .broken-text {
   text-decoration: line-through;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .about-me-text3 {
   margin-top: -1vw;
   font-size: 1.5vw;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .about-me-text4 {
   font-size: 1.5vw;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .about-me-text5 {
   font-size: 1.5vw;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* projects page */
+.projects-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  text-align: center;
+}
+
+.projects-header-text {
+  font-size: 3vw;
+  font-family: 'Prata';
+  color: var(--medium);
+}
+
+.projects-header-sub-text {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  color: var(--light);
+}
+
+.projects-card-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+/* project card component */
+.project-card-image {
+  width: 16vw;
+  height: 9vw;
+}
+
+.project-card-Title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2vw;
+  font-weight: bold;
+  color: var(--light);
+}
+
+.project-card-text {
+  font-family: 'Josefin Sans';
+  font-size: 1vw;
+  max-width: 20vw;
+  color: var(--dark);
+}
+
+.project-card-btn {
+  width: 7vw;
+  font-size: 1vw;
+  background: none;
+  margin-top: 1vw;
+  padding: 0.5vw;
+  color: var(--bright);
+  border: 1px solid black;
 }
