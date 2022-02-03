@@ -681,5 +681,83 @@ body {
     width: 30vw;
   }
 
+/* exp page */
+  .experience-page-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+  }
+  
+  .exp-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-right: none;
+    width: 60vw;
+    border-bottom: 2px solid lightgray;
+  }
 
+  .exp-header-text {
+    font-size: 6vw;
+  }
+
+  .front-exp-header {
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .front-exp-text {
+    font-size: 4.5vw;
+    text-align: center;
+  }
+  .back-exp-header {
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .back-exp-text {
+    font-size: 4.5vw;
+    text-align: center;
+  }
+
+  .skills-box {
+    width: 60vw;
+  }
+
+  .int-header {
+    font-size: 4vw;
+    margin-top: 3vh;
+  }
+
+  .int-sub-header {
+    font-size: 5vw;
+    margin-top: 1vh;
+  }
+
+  .int-text {
+  font-size: 4vw;
+  text-align: justify;
+  margin-top: 1vh;
+  }
+
+  .add-header {
+    font-size: 4vw;
+  }
+
+  .add-sub-header {
+    font-size: 5vw;
+    margin-top: -1vh;
+  }
+
+  .add-text1 {
+  font-size: 4vw;
+  text-align: justify;
+  margin-top: 1vh;
+  }
+
+  .add-text2 {
+  font-size: 4vw;
+  text-align: justify;
+  margin-top: 1vh;
+  }
 }
