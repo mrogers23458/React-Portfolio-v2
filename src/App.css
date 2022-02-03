@@ -361,7 +361,7 @@ body {
 /* home page */
 .page-one-box {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
   }
 
 .hello-text {
@@ -375,6 +375,67 @@ body {
 .job-text {
   font-size: 3vw;
   margin-top: -5vw;
+}
+
+.work-together-box {
+  position: absolute;
+  top: 75vh;
+  left: 30vw;
+}
+
+.profile-pic {
+  width: 50vw;
+  height: 50vw;
+  position: relative;
+  top: -10vh;
+}
+
+.work-text {
+  font-size: 3vw;
+}
+
+/* about page */
+.about-box {
+  flex-direction: column;
+  height: 10vh;
+}
+
+.about-title-box {
+  width: 80vw;
+  border-right: none;
+  border-bottom: 2px solid lightgray;
+  margin-left: 5vw;
+}
+
+.about-text-box {
+  height: 70vh;
+  width: 80vw;
+  margin-left: 5vw;
+}
+
+.about-me-text{
+  font-size: 2.5vw;
+}
+
+.about-me-text1 {
+  font-size: 5.3vw;
+}
+
+.about-me-text2 {
+  font-size: 4.6vw;
+}
+
+.about-me-text3 {
+  font-size: 3.5vw;
+  line-height: 2.5vh;
+}
+.about-me-text4 {
+  font-size: 3.5vw;
+  line-height: 2.5vh;
+}
+.about-me-text5 {
+  font-size: 3.5vw;
+  line-height: 2.5vh;
 }
 
 /* projects page */
