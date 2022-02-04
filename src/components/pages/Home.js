@@ -1,10 +1,25 @@
-import image from '../../assets/images/colorizeMe.png'
-
+import webPimage from '../../assets/images/colorizeMewpFormat.webp'
+import pngImage from '../../assets/images/colorizeMe.png'
 export default function Home () {
 
     const contactRedirect = function () {
         window.location.href='/contact'
     }
+
+    const ImgWithFallback = ({
+        src,
+        fallback,
+        className = 'profile-pic',
+        type = 'image/webp',
+        ...delegated
+      }) => {
+        return (
+          <picture >
+            <source alt='blonde man headshot' className={className} srcSet={src} type={type} />
+            <img alt='blonde man headshot' className={className} src={fallback} {...delegated} />
+          </picture>
+        );
+      };
 
     return (
         <div id="home" className="page-one-box">
@@ -17,7 +32,7 @@ export default function Home () {
                 </div>
             </div>
             <div className="profile-img-box">
-                <img className="profile-pic" src={image}></img>
+                <ImgWithFallback src={webPimage} fallback={pngImage} alt="Some photo" />
             </div>
         </div>
     )
