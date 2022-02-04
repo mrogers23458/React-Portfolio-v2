@@ -11,9 +11,9 @@ export default function ProjectCard (props) {
 
     return (
         <div className="project-card">
-            <img className="project-card-image" src={imageSrc}></img>
+            <p className="project-card-Title">{title}</p>
+            <img className="project-card-image" src={imageSrc} onClick={() => redirect(link)}></img>
             <div className="project-card-body">
-                <p className="project-card-Title">{title}</p>
                 <p className="project-card-text">{description}</p>
                 <button className="project-card-btn" onClick={() => redirect(link)}>Check it out</button>
             </div>

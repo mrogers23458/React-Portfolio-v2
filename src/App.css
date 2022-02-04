@@ -42,7 +42,6 @@ body {
 
 /* nav */
 .top-nav {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,7 +57,7 @@ body {
 }
 
 .top-nav-link {
-  font-size: 20px;
+  font-size: 1.5vw;
   margin-left: 10px;
   margin-right: 10px;
   padding: 5px;
@@ -66,6 +65,18 @@ body {
 }
 .mobile-nav {
   display: none;
+}
+
+.h-1:hover {
+  color: var(--medium);
+}
+
+.h-2:hover{
+  color: var(--dark);
+}
+
+.h-3:hover{
+  color: var(--bright);
 }
 
 /* home page */
@@ -111,6 +122,10 @@ body {
 .work-together-box {
   width: 35%;
   border: 2px solid #949494;
+}
+
+.work-together-box:hover{
+  cursor: pointer;
 }
 
 .work-text {
@@ -245,6 +260,12 @@ body {
 .project-card-image {
   width: 16vw;
   height: 9vw;
+  margin-bottom: 5vh;
+  box-shadow: 12px 12px 35px var(--light);
+}
+
+.project-card-image:hover {
+  cursor: pointer;
 }
 
 .project-card-Title {
@@ -264,11 +285,16 @@ body {
 .project-card-btn {
   width: 7vw;
   font-size: 1vw;
-  background: none;
+  background: var(--dark);
   margin-top: 1vw;
   padding: 0.5vw;
   color: var(--bright);
-  border: 1px solid black;
+  border: 1px solid var(--bright);
+}
+
+.project-card-btn:hover {
+  background: var(--light);
+  transition: 1s;
 }
 
 /* experience page */
@@ -462,12 +488,12 @@ body {
 
 
 /* media queries */
-@media only screen and (max-width: 500px) {
+@media (max-width: 640px), (max-aspect-ratio: 4/3) {
 
-    .App {
-      height: 100vh;
-      overflow-x: hidden;
-    }
+  .App {
+    height: 100vh;
+    overflow-x: hidden;
+  }
   /* navbar */
   .top-nav {
     display: none;
@@ -476,18 +502,23 @@ body {
   .mobile-nav {
     display: flex;
     position: relative;
-    width: 90vw;
+    width: 95vw;
     justify-content: space-between;
     align-items: center;
     margin: 5vw;
   }
 
   .mobile-nav-link {
-    font-size: 4vw;
+    font-size: 3vw;
+    font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
     margin-top: 1vw;
-    padding-left: 5vw;
-    padding-right: 3vw;
+    margin-bottom: 1vw;
+    padding: 0.5vw;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
+    color: white;
+    border-right: 1px solid white;
   }
 
   .logo-brand {
@@ -501,6 +532,7 @@ body {
     flex-direction: column;
     align-items: flex-end;
     width: 7vw;
+    margin-right: 5vw;
   }
 
   .modal-toggle-line {
@@ -515,12 +547,12 @@ body {
     background: var(--bright);
     position: absolute;
     margin-top: 4vw;
-    width: 100vw;
-    right: -600px;
+    width: 90vw;
+    right: -870px;
   }
 
   .display {
-    transform: translate(-550px);
+    transform: translate(-850px);
     transition: 1s;
   }
 
@@ -542,10 +574,6 @@ body {
   .close {
     transform: rotate(0deg) translate(0vw);
     transition: 1s;
-  }
-
-  .blur {
-    backdrop-filter: blur(2px);
   }
 
   /* home page */
@@ -651,20 +679,21 @@ body {
 
   .project-card {
     width: 90vw;
-    height: 35vh;
+    height: 50vh;
     justify-content: flex-start;
-    margin-top: 5vh;
+    margin-top: 10vh;
     margin-bottom: 8vh;
   }
 
   .project-card-image {
     width: 70vw;
-    height: 20vh;
+    height: 30vh;
   }
 
   .project-card-body {
-    width: 80vw;
-    height: 5vh;
+    width: 60vw;
+    height: 15vh;
+    margin-bottom: 2vh;
   }
 
   .project-card-Title {
@@ -759,5 +788,64 @@ body {
   font-size: 4vw;
   text-align: justify;
   margin-top: 1vh;
+  }
+
+/* contact page */
+  .contact-page-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-info-box {
+    border-bottom: 2px solid lightgray;
+    border-right: none;
+    width: 50vw;
+    margin-top: 5vh;
+  }
+
+  .contact-info-header-text {
+    font-size: 6vw;
+  }
+
+  .email-text-header {
+    font-size: 4vw;
+  }
+
+  .email-text {
+    font-size: 5vw;
+  }
+
+  .phone-text-header {
+    font-size: 4vw;
+  }
+
+  .phone-text {
+    font-size: 5vw;
+  }
+
+  .ops-box {
+    width: 50vw;
+  }
+
+  .ops-text1 {
+    font-size: 4vw;
+    margin-top: -8vh;
+  }
+
+  .ops-text2 {
+    font-size: 4vw;
+  }
+
+  .social-icons-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10vh;
+    width: 60vw;
+  }
+
+  .icon {
+    width: 10vw;
+    height: 10vw;
   }
 }

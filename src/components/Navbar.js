@@ -33,13 +33,15 @@ export default function Navbar () {
     <div className="navs">
         <div className="top-nav pitch">
             <div className="logo-brand light">
-                <a href="/" className="logo-text logo">M | R</a>
+                <a href="/" className="logo-text bright">M | R</a>
             </div>
             <div className="nav-links-container">
-                <a className="top-nav-link light" href="/about">About</a>
-                <a className="top-nav-link light" href="projects">Projects</a>
-                <a className="top-nav-link light" href="experience">Experience</a>
-                <a className="top-nav-link light" href={myResume}  target='_blank' rel='noopener noreferrer'>Resume</a>
+                <a className="top-nav-link h-3 light" href="/">Home</a>
+                <a className="top-nav-link h-1 light" href="/about">About</a>
+                <a className="top-nav-link h-2 light" href="/projects">Projects</a>
+                <a className="top-nav-link h-3 light" href="/experience">Experience</a>
+                <a className="top-nav-link h-1 light" href="/contact">Contact</a>
+                <a className="top-nav-link h-2 light" href={myResume}  target='_blank' rel='noopener noreferrer'>Resume</a>
             </div>
         </div>
         <div className="mobile-nav">
@@ -51,9 +53,11 @@ export default function Navbar () {
                     <div className="modal-toggle-line rotate3"></div>
                 </div>
                 <div className="modal-box">
+                    <a href="/" className="mobile-nav-link light">Home</a>
                     <a href="/about" className="mobile-nav-link light">About</a>
-                    <a href="/projects" className="mobile-nav-link light">projects</a>
+                    <a href="/projects" className="mobile-nav-link light">Projects</a>
                     <a href="/experience" className="mobile-nav-link light">Experience</a>
+                    <a href="/contact" className="mobile-nav-link light">Contact</a>
                     <a href={myResume} className="mobile-nav-link light" target='_blank' rel='noopener noreferrer' >Resume</a>
                 </div>
             </div>
